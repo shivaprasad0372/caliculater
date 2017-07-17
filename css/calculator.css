@@ -1,0 +1,50 @@
+#calculator {
+  width: 70vh;
+  margin: 0 auto;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 100; }
+  #calculator #result {
+    height: 20vh;
+    font-weight: 400;
+    text-align: right;
+    font-size: 12vh;
+    background-color: lightgray;
+    overflow: hidden; }
+  #calculator #preview {
+    height: 10vh;
+    font-weight: 100;
+    text-align: right;
+    font-size: 7vh;
+    line-height: 9vh;
+    background-color: #a0a0a0; }
+  #calculator #keys {
+    text-align: center;
+    cursor: pointer;
+    line-height: 16vh; }
+    #calculator #keys .key::selection {
+      background: transparent;
+      /* WebKit/Blink Browsers */ }
+    #calculator #keys .key::-moz-selection {
+      background: transparent;
+      /* Gecko Browsers */ }
+    #calculator #keys #numbers {
+      background-color: #3A3A3A;
+      color: #FFF;
+      padding: 0; }
+      #calculator #keys #numbers .key {
+        height: 17.5vh;
+        font-size: 3.5vh;
+        line-height: 17.5vh; }
+        #calculator #keys #numbers .key:hover {
+          background-color: #282828; }
+    #calculator #keys #operators {
+      background-color: #4E4E4E;
+      color: #FFF;
+      padding: 0; }
+      #calculator #keys #operators .key {
+        height: 14vh;
+        font-size: 4vh; }
+        #calculator #keys #operators .key:hover {
+          background-color: #414141; }
+
+/*# sourceMappingURL=calculator.css.map */

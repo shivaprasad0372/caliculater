@@ -1,0 +1,73 @@
+$dark-bg-color:#3A3A3A;
+$light-bg-color:#4E4E4E;
+
+#calculator {
+  width: 70vh;
+  margin: 0 auto;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 100;
+  #result {
+    height: 20vh;
+    font-weight: 400;
+    text-align: right;
+    font-size: 12vh;
+    background-color: lighten($dark-bg-color, 60%);
+    overflow: hidden;
+
+  }
+
+  #preview {
+    height: 10vh;
+    font-weight: 100;
+    text-align: right;
+    font-size: 7vh;
+    line-height: 9vh;
+    background-color: lighten($dark-bg-color, 40%);
+  }
+
+  #keys {
+      text-align: center;
+      cursor: pointer;
+      line-height: 16vh;
+
+      .key {
+          &::selection {
+            background: transparent; /* WebKit/Blink Browsers */
+            }
+          &::-moz-selection {
+            background: transparent; /* Gecko Browsers */
+            }
+      }
+
+
+    #numbers {
+      background-color:$dark-bg-color;
+      color: #FFF;
+      padding: 0;
+
+      .key {
+        height: 17.5vh;
+        font-size: 3.5vh;
+        line-height: 17.5vh;
+        &:hover {
+          background-color: darken($dark-bg-color, 7%);
+        }
+      }
+    }
+    #operators {
+      background-color:$light-bg-color;
+      color: #FFF;
+      padding: 0;
+
+      .key {
+        height: 14vh;
+        font-size: 4vh;
+        &:hover {
+          background-color: darken($light-bg-color, 5%);
+        }
+
+      }
+    }
+
+  }
+}
